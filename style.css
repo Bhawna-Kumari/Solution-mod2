@@ -1,0 +1,72 @@
+
+/* wildcard style */
+*{
+	box-sizing: border-box;
+}
+
+/* padding for whole body */
+body{
+	padding: 20px;
+}
+
+/*styling body*/
+.container{
+	max-width: 1200px;
+	margin: auto;
+}
+h1{
+	color: green;
+	text-align: center;
+}
+h2{
+	color: gray;
+}
+
+h3{
+	color: blue;
+}
+p{
+	display: -webkit-box; -webkit-box-orient: vertical;
+	-webkit-line-clamp: 15;
+	overflow: hidden;
+}
+
+/*row and column decor*/
+.row{
+	margin: 0px -18px;
+	padding: 25px;
+}
+.row > .column{
+	padding: 15px;
+}
+
+.column{
+	float: left;
+	width: 25%;
+}
+
+.row:after{
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+/*content decor*/
+.content{
+	background-color: white;
+	padding: 10px;
+	border: 1px solid gray;
+}
+
+@media screen and (max-width: 850px){
+	.column{
+		width: 50%;
+	}
+	
+}
+
+@media screen and (max-width: 400px){
+	.column {
+		width: 100%;
+	}
+}
